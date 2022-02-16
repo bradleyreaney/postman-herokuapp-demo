@@ -252,6 +252,7 @@
 							"    pm.expect(jsonData.bookingdates.checkin).to.eql(\"2021-02-11\");",
 							"    pm.expect(jsonData.bookingdates.checkout).to.eql(\"2021-02-18\");",
 							"    pm.expect(jsonData.additionalneeds).to.eql(\"Breakfast\");",
+							"    pm.environment.set(\"firstname\", jsonData.firstname);",
 							"});",
 							""
 						],
