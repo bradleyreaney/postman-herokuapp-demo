@@ -11,7 +11,8 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
-          collection: NimbleHerokuAppDemo.postman_collection.json
-          environment: NimbleHerokuAppDemo.postman_environment.json
+#           collection: NimbleHerokuAppDemo.postman_collection.json
+#           environment: NimbleHerokuAppDemo.postman_environment.json
       - run: npm install -g newman
-      - run: newman run "${{collection}}" --environment "${{environment}}"
+#       - run: newman run "${{collection}}" --environment "${{environment}}"
+      - run: newman run NimbleHerokuAppDemo.postman_collection.json --environment NimbleHerokuAppDemo.postman_environment.json
