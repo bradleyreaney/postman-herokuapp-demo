@@ -17,3 +17,8 @@ You can also run the collection using the Node package Newman CLI. To do this yo
 Once thats installed, you'll need to naviagte to the location where the collection and environment files are located and run the following command `newman run <Collection File Name> -e <Environment File Name>`. For our example that would look like this `newman run NimbleHerokuAppDemo.postman_collection.json -e NimbleHerokuAppDemo.postman_environment.json`
 
 ![Newman CLI](https://assets.postman.com/postman-docs/newman-running-in-terminal.gif)
+
+##### GitHub actions workflow
+This repo in GitHub has also been setup to use GitHub actions. This will run the Newman tests once something has been committed to the master branch.
+ - The YAML for the actions can be found here - [Postman-herokuapp-demo actions YAML](https://github.com/bradleyreaney/postman-herokuapp-demo/blob/master/.github/workflows/newman-github-actions.yml)
+ - The actions that have run in the past are here - [Postman-herokuapp-demo actions page](https://github.com/bradleyreaney/postman-herokuapp-demo/actions)
