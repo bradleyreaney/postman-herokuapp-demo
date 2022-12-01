@@ -14,4 +14,4 @@ jobs:
           collection: NimbleHerokuAppDemo.postman_collection.json
           environment: NimbleHerokuAppDemo.postman_environment.json
       - run: npm install -g newman
-      - run: newman run "https://api.getpostman.com/collections/${{collection}}" --environment "https://api.getpostman.com/environments/${{ environment }}"
+      - run: newman run "${{collection}}" --environment "${{environment}}"
